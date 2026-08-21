@@ -12,7 +12,7 @@
 
 - Primary lineage: high-energy sports editorial. It contributes a fast first read, large event display type, full-bleed documentary motion photography and format-aware identity applications.
 - Supporting counterweight: restrained service UI. It contributes legible CJK controls, stable panels, explicit units, visible states and conservative form behavior so the event expression does not damage task clarity.
-- Rejected: neon particles, glow effects, gradient decoration, dark-blue sci-fi styling, Canvas-rendered UI, generic rounded SaaS cards, map-as-wallpaper, and animated noise without state meaning.
+- Visual boundaries: avoid neon particles, glow effects, gradient decoration, dark-blue sci-fi styling, Canvas-rendered UI, generic rounded SaaS cards, map-as-wallpaper, and animated noise without state meaning.
 - The event is recognizable without imagery through the mark, `PULSE THE CITY` line, date/location/distance lockup, signal-yellow route language and square-edged application system.
 
 ## Brand System
