@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4f5f1" />
+    <meta name="description" content="ROOMSHIFT 格间小户型改造决策服务概念案例：空间对比、材料选择、预算与工期联动。" />
+    <link rel="icon" href="./roomshift-mark.svg" />
+    <link rel="preload" as="image" href="./assets/room-after.jpg" />
+    <link rel="stylesheet" href="./roomshift.css?v=1" />
+    <title>ROOMSHIFT 格间 - 小户型改造决策</title>
+  </head>
+  <body data-material="oak">
+    <a class="skip-link" href="#planner">跳至空间改造配置 / Skip to planner</a>
+
+    <header class="app-header">
+      <a class="brand-lockup" href="../index.html" aria-label="ROOMSHIFT 格间，返回案例首页">
+        <img src="./roomshift-mark.svg" width="36" height="36" alt="" />
+        <span><strong lang="en">ROOMSHIFT</strong><small>格间空间改造</small></span>
+      </a>
+      <div class="project-title">
+        <span>城南公寓 · 48㎡</span>
+        <small lang="en">CN-048 / CONCEPT PROJECT</small>
+      </div>
+      <p class="save-state"><i data-lucide="check" aria-hidden="true"></i><span>本页自动保留</span></p>
+      <p class="demo-chip">概念方案 / DEMO</p>
+      <button class="icon-button" id="reset-project" type="button" aria-label="重置改造方案" title="重置方案 / Reset">
+        <i data-lucide="rotate-ccw" aria-hidden="true"></i><span class="icon-fallback" aria-hidden="true">↺</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="planner" id="planner" aria-labelledby="planner-title">
+        <div class="visual-stage" style="--after-clip: 34%">
+          <div class="stage-copy">
+            <p>小户型改造决策 / RENOVATION DECISION</p>
+            <h1 id="planner-title">让每一平方米，<br />都有明确的去处。</h1>
+            <span>选择居住场景与材料，同时看效果、预算和工期。</span>
+          </div>
+
+          <img class="compare-photo compare-before" src="./assets/room-before.jpg" width="1800" height="1013" alt="用于概念对照的空置室内空间照片" />
+          <div class="compare-after" aria-hidden="true">
+            <img class="compare-photo" src="./assets/room-after.jpg" width="1800" height="1157" alt="" />
+          </div>
+          <div class="material-wash" aria-hidden="true"></div>
+          <div class="compare-line" aria-hidden="true"><span><i data-lucide="move-horizontal"></i></span></div>
+
+          <div class="compare-labels" aria-hidden="true"><span>原始空间 / BEFORE</span><span>概念方案 / AFTER</span></div>
+          <label class="compare-control" for="compare-range">
+            <span>拖动查看对照</span>
+            <input id="compare-range" type="range" min="10" max="90" value="66" aria-label="调整原始空间与概念方案的对比位置" />
+            <output id="compare-output" for="compare-range">方案 66%</output>
+          </label>
+          <p class="image-note">两张公开摄影用于概念场景对照，并非同一住宅的施工前后记录。</p>
+        </div>
+
+        <aside class="config-panel" aria-label="改造方案配置">
+          <header class="config-heading">
+            <p>空间 01 / LIVING + DINING</p>
+            <h2>客餐厅方案</h2>
+            <span id="scenario-summary">一个人住，也为偶尔到访的朋友留位置。</span>
+          </header>
+
+          <section class="control-section" aria-labelledby="scenario-title">
+            <div class="section-label"><h3 id="scenario-title">谁住在这里</h3><span>HOUSEHOLD</span></div>
+            <div class="segmented" role="group" aria-label="选择居住场景">
+              <button class="is-active" type="button" data-scenario="solo" aria-pressed="true">独居</button>
+              <button type="button" data-scenario="couple" aria-pressed="false">二人</button>
+              <button type="button" data-scenario="family" aria-pressed="false">三口之家</button>
+            </div>
+            <ul class="priority-list" id="priority-list" aria-label="当前空间优先级">
+              <li><i data-lucide="check" aria-hidden="true"></i>一张可展开的工作桌</li>
+              <li><i data-lucide="check" aria-hidden="true"></i>4.8m 连续收纳墙</li>
+              <li><i data-lucide="check" aria-hidden="true"></i>保留四人聚餐位置</li>
+            </ul>
+          </section>
+
+          <section class="control-section" aria-labelledby="material-title">
+            <div class="section-label"><h3 id="material-title">主材与触感</h3><span>MATERIAL PALETTE</span></div>
+            <div class="material-options" role="group" aria-label="选择主材方案">
+              <button class="material-option is-active" type="button" data-material="oak" aria-pressed="true">
+                <i class="swatch swatch-oak" aria-hidden="true"></i><span><b>隐雾橡木</b><small>温和 · 耐用</small></span><em>+¥0</em>
+              </button>
+              <button class="material-option" type="button" data-material="mineral" aria-pressed="false">
+                <i class="swatch swatch-mineral" aria-hidden="true"></i><span><b>矿物灰</b><small>克制 · 清晰</small></span><em>+¥3,800</em>
+              </button>
+              <button class="material-option" type="button" data-material="vermilion" aria-pressed="false">
+                <i class="swatch swatch-vermilion" aria-hidden="true"></i><span><b>朱砂点景</b><small>醒目 · 限量</small></span><em>+¥6,200</em>
+              </button>
+            </div>
+          </section>
+
+          <section class="control-section storage-control" aria-labelledby="storage-title">
+            <div class="section-label"><h3 id="storage-title">连续收纳长度</h3><span>STORAGE WALL</span></div>
+            <div class="range-row">
+              <input id="storage-range" type="range" min="3" max="7" step="0.5" value="4.5" aria-label="设置连续收纳墙长度，单位米" />
+              <output id="storage-output" for="storage-range">4.5 m</output>
+            </div>
+            <p id="storage-note">覆盖玄关、餐边与清洁用品，保留一组开放展示格。</p>
+          </section>
+
+          <section class="estimate" aria-labelledby="estimate-title">
+            <div class="section-label"><h3 id="estimate-title">即时估算</h3><span>LIVE ESTIMATE · DEMO</span></div>
+            <dl>
+              <div><dt>概念预算</dt><dd id="budget-value">¥168,000</dd></div>
+              <div><dt>预计工期</dt><dd id="duration-value">10–12 周</dd></div>
+              <div><dt>收纳增量</dt><dd id="storage-value">+38%</dd></div>
+            </dl>
+            <p><i data-lucide="info" aria-hidden="true"></i>估算为界面演示数据，不构成真实报价或施工承诺。</p>
+          </section>
+
+          <div class="panel-actions">
+            <button class="button button-primary" id="generate-plan" type="button">生成双语概念方案 <i data-lucide="file-down" aria-hidden="true"></i></button>
+            <button class="button button-secondary" id="book-review" type="button">预约 15 分钟方案核对</button>
+            <button class="text-button" id="undo-change" type="button" disabled><i data-lucide="undo-2" aria-hidden="true"></i>撤销上一步</button>
+          </div>
+        </aside>
+      </section>
+
+      <section class="identity-system" aria-labelledby="identity-title">
+        <header class="system-heading">
+          <p>02 / IDENTITY TO TOUCHPOINT</p>
+          <h2 id="identity-title">空间会改变，<br />判断标准不能漂移。</h2>
+          <span>错位墙线构成“可调整的边界”。矿物绿用于信任，朱砂色只标记改变与决策。</span>
+        </header>
+
+        <div class="identity-grid">
+          <article class="mark-specimen">
+            <div class="application-label"><span>品牌标识 / IDENTITY</span><b>01</b></div>
+            <div class="mark-field"><img src="./roomshift-mark.svg" width="156" height="156" alt="ROOMSHIFT 格间错位空间标识" /><p><strong lang="en">ROOMSHIFT</strong><span>格间空间改造</span></p></div>
+            <div class="mark-tests" aria-label="标识小尺寸与单色测试"><img src="./roomshift-mark-mono.svg" width="48" height="48" alt="单色标识 48 像素测试" /><img src="./roomshift-mark-mono.svg" width="24" height="24" alt="单色标识 24 像素测试" /><img src="./roomshift-mark-mono.svg" width="16" height="16" alt="单色标识 16 像素测试" /><span>16 / 24 / 48 px</span></div>
+          </article>
+
+          <article class="sample-kit">
+            <div class="application-label"><span>材料样本盒 / SAMPLE KIT</span><b>02</b></div>
+            <div class="kit-object">
+              <header><img src="./roomshift-mark-mono.svg" alt="" /><span>CN-048</span></header>
+              <p><b>城南公寓</b><small>客餐厅材料组合 / 2026.08</small></p>
+              <div class="kit-swatches" aria-hidden="true"><i></i><i></i><i></i></div>
+              <footer>TOUCH BEFORE DECISION</footer>
+            </div>
+          </article>
+
+          <article class="report-cover">
+            <div class="application-label"><span>方案书 / BILINGUAL REPORT</span><b>03</b></div>
+            <div class="report-object">
+              <img src="./assets/material-room.jpg" width="1200" height="801" alt="作为空间方案封面的现代室内照片" />
+              <div><img src="./roomshift-mark-mono.svg" alt="" /><p>城南公寓<br /><span lang="en">CHENGNAN 048</span></p><strong>空间改造概念方案</strong><small>预算 · 材料 · 工期 / CONCEPT ONLY</small></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="closing-band" aria-label="案例说明">
+        <img src="./roomshift-mark.svg" width="64" height="64" alt="" />
+        <p><span lang="en">SHIFT THE SPACE, KEEP THE LOGIC.</span><strong>先看真实约束，再决定空间长什么样。</strong></p>
+        <a href="#planner">回到方案配置 <i data-lucide="arrow-up" aria-hidden="true"></i></a>
+      </section>
+    </main>
+
+    <dialog class="review-dialog" id="booking-dialog" aria-labelledby="booking-title">
+      <form id="booking-form" method="dialog" novalidate>
+        <header><p>方案核对 / DESIGN REVIEW</p><button type="submit" value="cancel" aria-label="关闭预约窗口" title="关闭 / Close"><i data-lucide="x" aria-hidden="true"></i><span class="icon-fallback" aria-hidden="true">×</span></button></header>
+        <h2 id="booking-title">预约 15 分钟方案核对</h2>
+        <p>这是概念预约，不会上传或发送信息。确认后只在当前页面显示成功状态。</p>
+        <div class="dialog-fields">
+          <label><span>姓名 / Name</span><input id="booking-name" name="name" type="text" autocomplete="name" maxlength="24" required /></label>
+          <label><span>手机号码 / Mobile</span><input id="booking-phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" pattern="[0-9]{8,18}" required /></label>
+          <label><span>方便时间 / Preferred time</span><select id="booking-time" name="time"><option>工作日 12:00–14:00</option><option>工作日 18:00–20:00</option><option>周末 10:00–12:00</option></select></label>
+        </div>
+        <p class="dialog-error" id="booking-error" role="alert" hidden></p>
+        <div class="dialog-actions"><button class="text-button" value="cancel">返回修改</button><button class="button button-primary" id="confirm-booking" type="button">确认概念预约 <i data-lucide="calendar-check" aria-hidden="true"></i></button></div>
+      </form>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" hidden><i data-lucide="circle-check" aria-hidden="true"></i><span id="toast-copy">方案已更新。</span><button id="close-toast" type="button" aria-label="关闭提示"><i data-lucide="x" aria-hidden="true"></i><span class="icon-fallback" aria-hidden="true">×</span></button></div>
+    <noscript><p class="noscript-note">请启用 JavaScript 以体验空间对比、材料配置与概念方案生成。</p></noscript>
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.468.0/dist/umd/lucide.min.js" crossorigin="anonymous"></script>
+    <script src="./roomshift.js?v=1"></script>
+  </body>
+</html>

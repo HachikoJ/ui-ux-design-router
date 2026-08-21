@@ -4,14 +4,15 @@ Use only the smallest source that resolves the current design question. These ar
 
 For newly researched case libraries, design systems, benchmarks, and review sources, use [research-catalog.md](research-catalog.md). It records evidence levels, public-access limitations, what each source can and cannot prove, and which sources are visual discovery only.
 
-## Local Sources
+## Optional Local Sources
 
-- `awesome-design` workflow: resolve the installed `awesome-design/SKILL.md` through the available-skills catalog.
-- Premium lineage map: `awesome-design/references/reference-map.md` under that skill's installed root.
-- Local brand `DESIGN.md` references: `awesome-design-md/design-md/<brand>/README.md` under that skill's installed root.
-- Existing product-first UX workflow: resolve the installed `ui-ux-pro-max/SKILL.md` through the available-skills catalog.
+- `awesome-design` workflow: when installed and the user explicitly invokes it or deeper art-direction detail is necessary, resolve its `SKILL.md` through the available-skills catalog.
+- Premium lineage map: when installed, use `awesome-design/references/reference-map.md` under that skill's root; otherwise use the integrated mappings in `capability-router.md`.
+- Local brand `DESIGN.md` references: when installed, use only `awesome-design-md/design-md/<brand>/README.md` for the selected lineage; otherwise use one justified public source or proceed from the router's local rules.
+- Existing product-first UX workflow: its essential principles are integrated into this skill. Treat an installed `ui-ux-pro-max` as an optional explicit reference, not a dependency.
+- Brand and graphic design: use the internal `brand/` references for strategy, identity creation, campaigns, editorial, packaging, signage, templates, and print production.
 
-Read these local sources selectively through [capability-router.md](capability-router.md). Do not recursively load the entire brand library.
+Read these local sources selectively through [capability-router.md](capability-router.md). Their absence must not block the route. Do not recursively load the entire brand library.
 
 | Source | Use when | Extract |
 | --- | --- | --- |

@@ -1,8 +1,8 @@
 interface:
   display_name: "UI/UX Design Router"
-  short_description: "Default design route, visual direction, and UX review"
+  short_description: "Route product, brand, graphic, and mixed design"
   brand_color: "#1F6FEB"
-  default_prompt: "Use $ui-ux-design-router as the default design orchestration layer: route this product request to one coherent visual direction, interaction strategy, and validation plan."
+  default_prompt: "Use $ui-ux-design-router as the single design entry. Choose the product, brand/graphic, or mixed branch; then produce one coherent bilingual system with the relevant interaction or production validation."
 
 policy:
   allow_implicit_invocation: true

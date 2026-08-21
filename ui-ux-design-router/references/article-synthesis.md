@@ -54,7 +54,9 @@ The Apple example is valuable because it decomposes style into five executable a
 - Components: use concrete module rules such as hero, sticky sub-nav, feature-card grid, and product color swatch.
 - Do / Don't: use as the acceptance checklist. The article's Apple example calls out 28px card radius, `#0071e3` reserved for the primary CTA, no card shadows, and negative letter spacing for large headings.
 
-The recommended five-step usage is: choose one main style and one or two supporting references; inspect Preview and the written description; ask the agent to restate principles before coding; connect CSS variables or Tailwind tokens to the theme; generate by component rules rather than free-form whole-page improvisation; then run Do/Don't and Agent Prompt Guide checks for color misuse, shadows, tracking, radius, and density.
+The negative letter spacing above is an observed source-specific rule, not an adopted router default. This skill keeps letter spacing at `0`, especially for Chinese and mixed-script text; project constraints override source resemblance.
+
+The article recommends a main style with one or two supporting references. This router narrows the operational rule to one primary visual lineage plus at most one counterweight that resolves a named tension; any additional sources must supply evidence, specification, or validation rather than another style. Inspect Preview and the written description; restate principles before coding; connect CSS variables or Tailwind tokens to the theme; generate by component rules rather than free-form whole-page improvisation; then run Do/Don't and Agent Prompt Guide checks for color misuse, shadows, tracking, radius, and density.
 
 The article's reusable prompt pattern is:
 

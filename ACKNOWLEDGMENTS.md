@@ -31,6 +31,6 @@
 
 ## 案例媒体说明
 
-案例页面使用 Unsplash CDN 图片作为公开演示素材，图片 URL 保留在对应 CSS 文件中。案例不宣称拥有这些摄影作品的版权；重新分发或替换图片时，请按 [Unsplash License](https://unsplash.com/license) 和图片原作者要求核验归属。
+案例页面使用本地化的 Pexels 与 Unsplash 公开摄影素材。每张图片的来源页面、用途、许可说明和真实性边界记录在对应案例的 `DESIGN.md` 中；案例不宣称拥有摄影作品版权，也不暗示摄影对象参与虚构项目。重新分发或替换图片时，请重新核验 [Pexels License](https://www.pexels.com/license/) 或 [Unsplash License](https://unsplash.com/license) 及来源页面的当前要求。
 
 感谢所有上游维护者、研究作者、设计系统贡献者和开放素材创作者。

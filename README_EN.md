@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 [![Showcase](https://img.shields.io/badge/Showcase-GitHub%20Pages-1f6feb)](https://hachikoj.github.io/ui-ux-design-router/)
 
-A UI/UX routing skill for Codex. It identifies the product mode, user task, interaction constraints, and device priorities before selecting one coherent visual direction. It then turns that direction into executable design context and validates the result with browser-based quality gates.
+A single design-routing skill for Codex. It first classifies the deliverable as product UI/UX, brand/graphic, or mixed work, then loads only the relevant internal branch. Product interaction and brand/graphic production share one `$ui-ux-design-router` entry and retain separate validation gates.
 
 > This is an independent project. It is not an official distribution of, and is not endorsed by, any upstream project or organization.
 
@@ -18,8 +18,10 @@ A UI/UX routing skill for Codex. It identifies the product mode, user task, inte
 
 ## What It Does
 
-- Defines the product, primary user, north-star action, device priority, and content-density needs before implementation.
-- Routes work to operational, devtool, editorial, brand, commerce, touch-first, creative, or data-heavy modes.
+- Selects the product, brand/graphic, or mixed branch from the final deliverable; mixed work runs brand decisions before product application.
+- The product branch covers users, tasks, IA, components, interaction states, recovery, responsive behavior, and browser QA.
+- The brand/graphic branch covers strategy, naming, logos, identity, campaigns, posters, editorial, packaging, signage, templates, and production.
+- Selects a product behavior mode or a brand project mode/system depth from the actual context.
 - Selects one primary visual reference and, when justified, at most one supporting reference.
 - Translates references into native tokens, component rules, interaction states, and Do/Don't constraints.
 - Reviews keyboard, focus, touch, responsive, loading, error, recovery, and reduced-motion behavior.
@@ -37,14 +39,14 @@ cp -R /tmp/ui-ux-design-router/ui-ux-design-router ~/.codex/skills/
 Then invoke the skill in a task:
 
 ```text
-Use $ui-ux-design-router. Provide the route decision first, implement the UI,
-then review it in a real browser using quality-gates.md.
+Use $ui-ux-design-router. Choose the product, brand/graphic, or mixed branch first,
+then execute the relevant design process and quality gates.
 ```
 
 ## Repository Layout
 
 ```text
-ui-ux-design-router/   # Installable Codex skill
+ui-ux-design-router/   # Single installable entry with product and brand/graphic branches
 showcase/              # Two static, interactive case studies
 docs/screenshots/      # Screenshots of the current live deployment
 assets/                # Contact and optional-support images
@@ -54,10 +56,10 @@ ACKNOWLEDGMENTS.md     # Upstream sources and credits
 
 ## Showcase Cases
 
-- **Aurora Field Notes**: a brand/editorial route focused on narrative, signals, and reading rhythm.
-- **Vela A1**: a commerce/object route focused on product recognition, details, selection, reviews, and purchase feedback.
+- **ROOMSHIFT / 格间**: small-home renovation × material system × budget decisions. It tests an original spatial identity, photographic concept comparison, household and material configuration, linked budget/schedule feedback, undo/recovery, concept-plan generation, and review booking.
+- **PULSELINE / 脉线**: city night running × event identity × route safety × registration. It tests an original event system, race-bib and wayfinding applications, 5K/10K route decisions, reviewable form submission, a digital bib, and a finish/share state.
 
-The cases use original copy, CSS-built graphics, and public image URLs. They do not copy upstream logos, proprietary copy, or exact layouts.
+The cases use original copy and SVG marks, clearly labelled demo data, and traceable public photography. They do not copy upstream logos, proprietary copy, or exact layouts. Interfaces are semantic HTML/CSS rather than Canvas-rendered UI; all places, budgets, schedules, event details, rankings, and results are concept data rather than real services.
 
 ## Screenshots
 
@@ -68,12 +70,12 @@ The cases use original copy, CSS-built graphics, and public image URLs. They do 
 <table>
   <tr>
     <td width="50%">
-      <strong>Aurora Field Notes</strong><br>
-      <img src="./docs/screenshots/aurora-field-notes.webp" alt="Aurora Field Notes screenshot">
+      <strong>ROOMSHIFT / 格间</strong><br>
+      <img src="./docs/screenshots/roomshift-workspace.webp" alt="ROOMSHIFT small-home renovation planner screenshot">
     </td>
     <td width="50%">
-      <strong>Vela A1</strong><br>
-      <img src="./docs/screenshots/vela-a1.webp" alt="Vela A1 screenshot">
+      <strong>PULSELINE / 脉线</strong><br>
+      <img src="./docs/screenshots/pulseline-event.webp" alt="PULSELINE city night-run event screenshot">
     </td>
   </tr>
 </table>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">PULSELINE 脉线单色标志</title>
+  <desc id="desc">两条错位的城市路线折线汇合成向前的脉冲</desc>
+  <path fill="#11110f" d="M6 10h18v13h17v-7h17v14H38V17H12v24h14v13H6z"/>
+  <path fill="#11110f" d="M24 28h17v9h17v17H41V43H24z"/>
+</svg>

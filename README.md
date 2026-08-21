@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 [![Showcase](https://img.shields.io/badge/Showcase-GitHub%20Pages-1f6feb)](https://hachikoj.github.io/ui-ux-design-router/)
 
-一个面向 Codex 的 UI/UX 设计路由技能：先判断产品模式、用户任务和交互约束，再选择一条视觉方向，最后用浏览器检查和质量门禁验证结果。它把 `ui-ux-pro-max`、`awesome-design`、`DESIGN.md`、图标规则和视觉 QA 组织成一条可执行流程。
+一个面向 Codex 的统一设计路由技能：先判断交付物属于产品 UI/UX、品牌/平面或混合项目，再按需加载内部能力，选择一条可解释的视觉与交互/生产方向，最后用对应质量门禁验证。产品、品牌与平面能力共用一个 `$ui-ux-design-router` 入口，不需要用户记忆第二个技能名。
 
 > 本项目是独立创作，不是任何上游项目的官方发行版，也不代表上游作者或组织。
 
@@ -18,8 +18,10 @@
 
 ## 能解决什么
 
-- 在实现前明确产品、用户、设备优先级和 north-star action。
-- 根据内容密度与使用场景选择 operational、devtool、editorial、brand、commerce、touch-first、creative 或 data-heavy 模式。
+- 根据最终交付物先选择 product、brand/graphic 或 mixed 分支；混合项目固定先品牌、后产品。
+- 产品分支明确用户、设备、north-star action、信息架构、组件、状态与交互恢复。
+- 品牌/平面分支覆盖策略、命名、Logo、视觉系统、Campaign、海报、编辑出版、包装、导视、模板与生产交付。
+- 根据内容密度与使用场景选择产品模式，或根据媒介与系统深度选择品牌项目模式。
 - 选择一个主视觉参考，最多配一个辅助参考，避免把多个品牌皮肤混在一起。
 - 将参考转译为项目自己的 tokens、组件规则、交互状态和 Do/Don't 清单。
 - 检查键盘、焦点、触控、响应式、加载、错误、恢复和 reduced-motion 状态。
@@ -37,13 +39,13 @@ cp -R /tmp/ui-ux-design-router/ui-ux-design-router ~/.codex/skills/
 然后在任务中使用：
 
 ```text
-使用 $ui-ux-design-router，先给出 route decision，再实现并按 quality-gates.md 做浏览器检查。
+使用 $ui-ux-design-router，先判断 product、brand/graphic 或 mixed 分支，再执行对应设计与质量门禁。
 ```
 
 ## 目录结构
 
 ```text
-ui-ux-design-router/   # 可安装的 Codex skill
+ui-ux-design-router/   # 唯一可安装入口，内部含产品与品牌/平面分支
 showcase/              # 两个可直接打开的静态案例
 docs/screenshots/      # 当前线上版本的页面截图
 assets/                # 联系与支持图片
@@ -53,12 +55,12 @@ ACKNOWLEDGMENTS.md     # 上游项目、研究来源与鸣谢
 
 ## 案例
 
-在线案例展示了同一套路由方法在两个不同产品表面的结果：
+在线案例展示了同一个技能入口如何为两个复合跨领域任务选择完全不同的结构、字体、容器、品牌与交互方法：
 
-- **Aurora Field Notes**：brand / editorial，重点是叙事、信号和阅读节奏。
-- **Vela A1**：commerce / object，重点是对象识别、产品细节、选择、评论和购买反馈。
+- **格间 ROOMSHIFT**：小户型改造 × 材料系统 × 预算决策。重点是原创空间品牌、真实摄影对照、家庭场景与材料配置、预算/工期联动、撤销恢复、概念方案生成和预约核对。
+- **脉线 PULSELINE**：城市夜跑 × 赛事品牌 × 路线安全 × 报名服务。重点是原创赛事身份、号码布与导视延展、5K/10K 路线判断、表单确认、数字号码布和完赛分享状态。
 
-案例只使用原创文案、CSS 图形和公开图片 URL，不复制上游项目的 logo、专有文案或精确布局。
+案例使用原创文案、原创 SVG 品牌标识、明确标注的模拟数据和可追溯的公开摄影素材，不复制上游项目的 Logo、专有文案或精确布局。界面以语义化 HTML/CSS 为主，不使用 Canvas 承载 UI；地点、预算、工期、赛事、排名和结果均为概念演示，不代表真实业务。
 
 ## 页面截图
 
@@ -69,12 +71,12 @@ ACKNOWLEDGMENTS.md     # 上游项目、研究来源与鸣谢
 <table>
   <tr>
     <td width="50%">
-      <strong>Aurora Field Notes</strong><br>
-      <img src="./docs/screenshots/aurora-field-notes.webp" alt="Aurora Field Notes 页面截图">
+      <strong>格间 ROOMSHIFT</strong><br>
+      <img src="./docs/screenshots/roomshift-workspace.webp" alt="格间 ROOMSHIFT 小户型改造方案截图">
     </td>
     <td width="50%">
-      <strong>Vela A1</strong><br>
-      <img src="./docs/screenshots/vela-a1.webp" alt="Vela A1 页面截图">
+      <strong>脉线 PULSELINE</strong><br>
+      <img src="./docs/screenshots/pulseline-event.webp" alt="脉线 PULSELINE 城市夜跑赛事截图">
     </td>
   </tr>
 </table>

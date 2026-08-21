@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">ROOMSHIFT 格间标识</title>
+  <desc id="desc">两组错位的空间墙线围合出中央可变区域</desc>
+  <path fill="#28584a" d="M7 7h39v13H20v26H7V7Z"/>
+  <path fill="#171b19" d="M57 57H18V44h26V18h13v39Z"/>
+  <path fill="#d65337" d="M25 25h14v14H25z"/>
+</svg>
