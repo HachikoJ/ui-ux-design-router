@@ -1,5 +1,7 @@
 # UI/UX Design Router
 
+[简体中文](./README.md) | [English](./README_EN.md)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 [![Showcase](https://img.shields.io/badge/Showcase-GitHub%20Pages-1f6feb)](https://hachikoj.github.io/ui-ux-design-router/)
 
@@ -12,6 +14,7 @@
 - GitHub 仓库：<https://github.com/HachikoJ/ui-ux-design-router>
 - 在线案例：<https://hachikoj.github.io/ui-ux-design-router/>
 - 引用与鸣谢：[`ACKNOWLEDGMENTS.md`](./ACKNOWLEDGMENTS.md)
+- English README：[`README_EN.md`](./README_EN.md)
 
 ## 能解决什么
 
@@ -42,6 +45,8 @@ cp -R /tmp/ui-ux-design-router/ui-ux-design-router ~/.codex/skills/
 ```text
 ui-ux-design-router/   # 可安装的 Codex skill
 showcase/              # 两个可直接打开的静态案例
+docs/screenshots/      # 当前线上版本的页面截图
+assets/                # 联系与支持图片
 ACKNOWLEDGMENTS.md     # 上游项目、研究来源与鸣谢
 .github/workflows/      # GitHub Pages 部署工作流
 ```
@@ -55,6 +60,25 @@ ACKNOWLEDGMENTS.md     # 上游项目、研究来源与鸣谢
 
 案例只使用原创文案、CSS 图形和公开图片 URL，不复制上游项目的 logo、专有文案或精确布局。
 
+## 页面截图
+
+### Showcase 首页
+
+![UI/UX Design Router showcase 首页](./docs/screenshots/showcase-home.webp)
+
+<table>
+  <tr>
+    <td width="50%">
+      <strong>Aurora Field Notes</strong><br>
+      <img src="./docs/screenshots/aurora-field-notes.webp" alt="Aurora Field Notes 页面截图">
+    </td>
+    <td width="50%">
+      <strong>Vela A1</strong><br>
+      <img src="./docs/screenshots/vela-a1.webp" alt="Vela A1 页面截图">
+    </td>
+  </tr>
+</table>
+
 ## 许可证
 
 本项目采用 [MIT License](./LICENSE)。上游项目的许可证和原始仓库地址请以 [`ACKNOWLEDGMENTS.md`](./ACKNOWLEDGMENTS.md) 记录为准；本项目不会把上游许可证误写成自己的许可证。
@@ -67,3 +91,22 @@ ACKNOWLEDGMENTS.md     # 上游项目、研究来源与鸣谢
 - 微信：`hostrow`（添加时请备注“UI/UX Design Router”）
 
 欢迎通过 Issue 反馈路由判断、技能结构、案例交互或文档问题。请不要在 Issue 中公开 token、账号、客户资料或其他敏感信息。
+
+<table>
+  <tr>
+    <td align="center">
+      <strong>微信联系</strong><br>
+      <img src="./assets/wechat-contact.png" alt="Wilson 微信联系二维码" width="220">
+    </td>
+    <td align="center">
+      <strong>微信赞赏</strong><br>
+      <img src="./assets/donate-wechat.png" alt="微信赞赏码" width="220">
+    </td>
+    <td align="center">
+      <strong>支付宝赞赏</strong><br>
+      <img src="./assets/donate-alipay.png" alt="支付宝赞赏码" width="220">
+    </td>
+  </tr>
+</table>
+
+赞赏完全自愿，不影响项目使用、反馈处理或后续更新。
