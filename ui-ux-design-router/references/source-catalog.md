@@ -6,10 +6,10 @@ For newly researched case libraries, design systems, benchmarks, and review sour
 
 ## Local Sources
 
-- `awesome-design` workflow: `/Users/wilson/.codex/skills/awesome-design/SKILL.md`
-- Premium lineage map: `/Users/wilson/.codex/skills/awesome-design/references/reference-map.md`
-- Local brand `DESIGN.md` references: `/Users/wilson/.agents/skills/awesome-design-md/design-md/<brand>/README.md`
-- Existing product-first UX workflow: `/Users/wilson/.codex/skills/ui-ux-pro-max/SKILL.md`
+- `awesome-design` workflow: resolve the installed `awesome-design/SKILL.md` through the available-skills catalog.
+- Premium lineage map: `awesome-design/references/reference-map.md` under that skill's installed root.
+- Local brand `DESIGN.md` references: `awesome-design-md/design-md/<brand>/README.md` under that skill's installed root.
+- Existing product-first UX workflow: resolve the installed `ui-ux-pro-max/SKILL.md` through the available-skills catalog.
 
 Read these local sources selectively through [capability-router.md](capability-router.md). Do not recursively load the entire brand library.
 

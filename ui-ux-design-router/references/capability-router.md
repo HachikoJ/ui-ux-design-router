@@ -34,7 +34,7 @@ The source with lower priority may supply a useful rule but cannot override a hi
 | User signal / task shape | Primary capability | Read or fetch | Output constraint |
 | --- | --- | --- | --- |
 | "Make it feel premium", weak aesthetic brief, direction unknown | `awesome-design` + article synthesis | `routing-matrix.md`, then `case-index.md` or Refero search | Choose one lineage; translate its decisions; no brand skin |
-| Explicit Apple/Stripe/Linear/Figma/Airbnb/etc. request | `awesome-design` lineage | Local README under `/Users/wilson/.agents/skills/awesome-design-md/design-md/<brand>/README.md`; fetch its external link only if current detail is necessary | Local project rules and product ergonomics beat resemblance |
+| Explicit Apple/Stripe/Linear/Figma/Airbnb/etc. request | `awesome-design` lineage | Installed `awesome-design-md/design-md/<brand>/README.md`; fetch its external link only if current detail is necessary | Local project rules and product ergonomics beat resemblance |
 | Existing product needs a stable visual system | `DESIGN.md` workflow | Read project `DESIGN.md`; use local brand reference or `designmd.supply`/`DesignMD.me` only to fill gaps | Connect tokens to the theme; retain rationale and Do/Don't |
 | Known competitor or URL needs reverse-engineering | Article source workflow | `designmd.supply` for rich breakdown; `DesignMD.me` for fast extraction | Compare CTA, type, cards, forms, palette, and density; state what is rejected |
 | Prompt-to-page concept or landing-page exploration | `awesome-design` + Neuform | `source-catalog.md`, then Neuform if reachable | Treat output as a concept direction; do not let it replace an existing product system |
@@ -74,7 +74,7 @@ Translate a reference into native decisions:
 
 The local library is a source directory, not a command to copy files every time:
 
-`/Users/wilson/.agents/skills/awesome-design-md/design-md/<brand>/README.md`
+`awesome-design-md/design-md/<brand>/README.md` under the installed skill root
 
 Read the relevant README only after the mode and lineage are selected. These READMEs may point to external `getdesign.md` pages; browse those pages only when the local summary is insufficient and the current task justifies the lookup. Do not copy a local `DESIGN.md` into the project unless the user asks for that artifact or the implementation needs a project-local source of truth. When copied, adapt it and add product-specific rationale rather than preserving brand language blindly.
 
