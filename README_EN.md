@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 [![Showcase](https://img.shields.io/badge/Showcase-GitHub%20Pages-1f6feb)](https://hachikoj.github.io/ui-ux-design-router/)
 
-A unified design-routing skill for AI coding/design agents. It first classifies the deliverable as product UI/UX, brand/graphic, or mixed work, then loads only the relevant internal branch. It is intended for tools that support `SKILL.md`, project instructions, or a comparable agent workflow; Codex is only one installation example. Product interaction and brand/graphic production share one `$ui-ux-design-router` entry and retain separate validation gates.
+A general-purpose design-routing skill for AI coding/design agents. It first classifies the deliverable as product UI/UX, brand/graphic, or mixed work, then loads only the relevant internal branch. It is intended for tools that support `SKILL.md`, project instructions, or a comparable agent workflow; one public entry covers product interaction and brand/graphic production.
 
 > This is an independent project. It is not an official distribution of, and is not endorsed by, any upstream project or organization.
 
@@ -28,7 +28,7 @@ A unified design-routing skill for AI coding/design agents. It first classifies 
 
 ## Installation
 
-Clone the repository and copy the skill directory into your agent's skills folder. For Codex:
+Clone the repository and copy the skill directory into your tool's skills folder. The example below uses the common `~/.codex/skills` path; replace it with the path used by your tool:
 
 ```bash
 git clone https://github.com/HachikoJ/ui-ux-design-router.git /tmp/ui-ux-design-router

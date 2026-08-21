@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 [![Showcase](https://img.shields.io/badge/Showcase-GitHub%20Pages-1f6feb)](https://hachikoj.github.io/ui-ux-design-router/)
 
-一个面向 AI coding/design agent 的统一设计路由技能：先判断交付物属于产品 UI/UX、品牌/平面或混合项目，再按需加载内部能力，选择一条可解释的视觉与交互/生产方向，最后用对应质量门禁验证。它适用于支持 `SKILL.md`、项目指令或同类 agent 工作流的工具；产品、品牌与平面能力共用一个 `$ui-ux-design-router` 入口，不需要用户记忆第二个技能名。
+一个通用的 AI coding/design agent 设计路由技能：先判断交付物属于产品 UI/UX、品牌/平面或混合项目，再按需加载内部能力，选择一条可解释的视觉与交互/生产方向，最后用对应质量门禁验证。它适用于支持 `SKILL.md`、项目指令或同类 agent 工作流的工具；同一个入口统一承载产品、品牌与平面能力。
 
 > 本项目是独立创作，不是任何上游项目的官方发行版，也不代表上游作者或组织。
 
@@ -28,7 +28,7 @@
 
 ## 安装
 
-把技能目录复制到你的 agent skills 目录。以 Codex 为例：
+把技能目录复制到所用工具的 skills 目录。下面以常见的 `~/.codex/skills` 目录为示例，其他工具请替换为自己的安装路径：
 
 ```bash
 git clone https://github.com/HachikoJ/ui-ux-design-router.git /tmp/ui-ux-design-router
