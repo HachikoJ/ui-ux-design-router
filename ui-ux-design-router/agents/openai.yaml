@@ -1,0 +1,8 @@
+interface:
+  display_name: "UI/UX Design Router"
+  short_description: "Default design route, visual direction, and UX review"
+  brand_color: "#1F6FEB"
+  default_prompt: "Use $ui-ux-design-router as the default design orchestration layer: route this product request to one coherent visual direction, interaction strategy, and validation plan."
+
+policy:
+  allow_implicit_invocation: true
