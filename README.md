@@ -114,3 +114,14 @@ ACKNOWLEDGMENTS.md     # 上游项目、研究来源与鸣谢
 </table>
 
 赞赏完全自愿，不影响项目使用、反馈处理或后续更新。
+---
+
+## 📢 加入交流群
+
+欢迎扫码加入微信交流群，一起交流使用经验、反馈问题：
+
+<p align="center">
+  <img src="assets/group-qr.jpg" alt="微信交流群二维码" width="260">
+</p>
+
+---
